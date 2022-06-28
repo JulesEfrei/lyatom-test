@@ -3,10 +3,9 @@ import React from "react";
 import AdminPanel from "lyatom-cms";
 import data from "./lyatomConfig.ts";
 import infoJson from "./data/data.json";
+import images from "./assets/"
 
 function App() {
-
-  console.log(process.env.REACT_APP_GH_TOKEN_PERSONAL);
 
   return (
     <div>
@@ -20,7 +19,7 @@ function App() {
       <img
         id="logo-example-id"
         alt="logo"
-        src={require("./assets/" + infoJson.image).default}
+        src={images[infoJson.image]}
       />
 
       <a id="object-example" href={infoJson.link.link}>{infoJson.link.text}</a>
