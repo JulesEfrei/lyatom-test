@@ -16,6 +16,7 @@ function App() {
       <p id="subtile-example-id">{infoJson.paragraph}</p>
       <img
         id="logo-example-id"
+        alt="logo"
         src={require("./assets/" + infoJson.image).default}
       />
     </div>
