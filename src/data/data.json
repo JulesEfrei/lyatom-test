@@ -1,7 +1,5 @@
 {
-  "paragraph": "Test paragraph",
-  "link": {
-    "text": "Learn Lyatom",
-    "link": "https://github.com/NJG-connect/lyatom-cms/blob/main/docs/en/getStarted.md#installation"
-  }
+  "title": "Title",
+  "paragraph": "paragraph",
+  "image": "logo.svg"
 }

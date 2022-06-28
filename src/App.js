@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 
 import AdminPanel from "lyatom-cms";
 import data from "./lyatomConfig.ts";
@@ -7,28 +6,20 @@ import infoJson from "./data/data.json";
 
 function App() {
   return (
-    <div className="App">
-
+    <div>
       <AdminPanel
-        config={data}
-        githubToken={process.env.REACT_APP_GH_TOKEN_PERSONAL}
+        config={data} // import une config here
+        githubToken={process.env.REACT_APP_GH_TOKEN_PERSONAL} // create a PAT on github and add it to the .env
       />
 
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p id="paragraph">{infoJson.paragraph}</p>
-        <a
-          className="App-link"
-          id="link-test"
-          href={infoJson.link.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {infoJson.link.text}
-        </a>
-      </header>
+      <h1 id="title-example-id">{infoJson.title}</h1>
+      <p id="subtile-example-id">{infoJson.paragraph}</p>
+      <img
+        id="logo-example-id"
+        src={require("./assets/images/" + infoJson.image).default}
+      />
     </div>
-  )
+  );
 }
 
 export default App;

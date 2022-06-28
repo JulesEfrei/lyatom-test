@@ -10,27 +10,26 @@ const data: CmsPropsType = {
   fields: [
     {
       type: "section", // start second with this its to create first section on Panel
-      title: "Home",
+      title: "Section 1",
       file: "/src/data/data.json", // root path specifies info of the first section
       fields: [
         {
           type: "input",
-          title: "Paragraph", // printing on AdminPanel
-          id: "paragraph", // key reference in the file ( info.json)
-          htmlId: "paragraph", // id to write in the html for real time editing
+          title: "Title", // printing on AdminPanel
+          id: "title", // key reference in the file ( info.json)
+          htmlId: "title-example-id", // id to write in the html for real time editing
         },
-      ],
-    },
-    {
-      type: "section", // start second with this its to create first section on Panel
-      title: "Test",
-      file: "/src/data/data.json", // root path specifies info of the first section
-      fields: [
         {
           type: "input",
-          title: "Paragraph", // printing on AdminPanel
-          id: "paragraph", // key reference in the file ( info.json)
-          htmlId: "paragraph", // id to write in the html for real time editing
+          title: "paragraph",
+          id: "paragraph",
+          htmlId: "subtile-example-id",
+        },
+        {
+          type: "image",
+          title: "Logo",
+          id: "image",
+          htmlId: "logo-example-id",
         },
       ],
     },
