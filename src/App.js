@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 
+import data from '../lyatom-config';
+import infoJson from './data/data.json'
+
 function App() {
   return (
     <div className="App">
+
+      <AdminPanel config={data} githubToken={process.env.REACT_APP_GH_TOKEN_PERSONAL} />
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {infoJson.paragraph}
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href={infoJson.link.link}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {infoJson.link.text}
         </a>
       </header>
+
     </div>
   );
 }
