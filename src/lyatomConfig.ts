@@ -11,7 +11,7 @@ const data: CmsPropsType = {
     {
       type: "section", // start second with this its to create first section on Panel
       title: "Home",
-      file: "/src/data/data.json", // root path specifies info of the first section
+      file: "/data/data.json", // root path specifies info of the first section
       fields: [
         {
           type: "input",
