@@ -4,7 +4,7 @@ const data: CmsPropsType = {
   branch: "main", // Branch to update
   repo: "JulesEfrei/lyatom-test", // Follows the pattern [org-or-username]/[repo-name]
   urlForLogin: "admin", // url for access of the panelAdmin
-  mediaFolder: "/src/assets/", // root path to the media files
+  mediaFolder: "/assets/", // root path to the media files
   title: "Test Lyatom CMS", // title in the PanelAdmin
   type: "firstLvl", // start always with this
   fields: [

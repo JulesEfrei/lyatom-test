@@ -16,7 +16,7 @@ function App() {
 
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p className="paragraph">{infoJson.paragraph}</p>
+        <p id="paragraph">{infoJson.paragraph}</p>
         <a
           className="App-link"
           id="link-test"
