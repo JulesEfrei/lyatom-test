@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import data from '../lyatom-config';
+import data from './lyatom-config';
 import infoJson from './data/data.json'
 
 function App() {
@@ -12,11 +12,12 @@ function App() {
 
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
+        <p className="paragraph">
           {infoJson.paragraph}
         </p>
         <a
           className="App-link"
+          id="link-test"
           href={infoJson.link.link}
           target="_blank"
           rel="noopener noreferrer"
