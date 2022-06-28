@@ -5,6 +5,9 @@ import data from "./lyatomConfig.ts";
 import infoJson from "./data/data.json";
 
 function App() {
+
+  console.log(process.env.REACT_APP_GH_TOKEN_PERSONAL);
+
   return (
     <div>
       <AdminPanel
