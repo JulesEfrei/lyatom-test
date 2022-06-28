@@ -1,9 +1,1 @@
-{
-  "title": "Lyatom CMS",
-  "paragraph": "Test",
-  "image": "logo",
-  "link": {
-    "text": "Click",
-    "link": "https://youtube.com"
-  }
-}
+{"title":"Lyatom CMS","paragraph":"Test","image":"logo","link":{"text":"Click","link":"https://google.com"}}
