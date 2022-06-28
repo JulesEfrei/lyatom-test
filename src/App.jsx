@@ -22,6 +22,9 @@ function App() {
         alt="logo"
         src={require("./assets/" + infoJson.image).default}
       />
+
+      <a id="object-example" href={infoJson.link.link}>{infoJson.link.text}</a>
+
     </div>
   );
 }

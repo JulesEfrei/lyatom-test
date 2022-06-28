@@ -33,6 +33,32 @@ const data: CmsPropsType = {
         },
       ],
     },
+    {
+      type: "section",
+      title: "Section 2",
+      file: "/src/data/data.json", // root path specifies info of the first section
+      fields: [
+        {
+          type: "object",
+          title: "Link",
+          id: "link",
+          fields: [
+            {
+              type: "input",
+              title: "Text",
+              id: "text",
+              htmlId: "object-example"
+            },
+            {
+              type: "input",
+              title: "Href",
+              id: "link",
+              htmlId: "object-example"
+            },
+          ]
+        }
+      ]
+    },
   ],
 };
 export default data;

@@ -1,5 +1,9 @@
 {
   "title": "Lyatom CMS",
   "paragraph": "Test",
-  "image": "logo192.png"
+  "image": "logo192.png",
+  "link": {
+    "text": "Click",
+    "link": "https://youtube.com"
+  }
 }
